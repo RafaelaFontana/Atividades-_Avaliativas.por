@@ -1,9 +1,9 @@
 programa {
 	funcao inicio() {
-	    /* 4. Faça um programa que converta metros para centímetros.*/
+	    /* 4. FaÃ§a um programa que converta metros para centÃ­metros.*/
 	    
 		inteiro m
-	    inteiro cm
+	        inteiro cm
 		inteiro mm
 		
 		escreva("Escreva um valor em metros: ")
@@ -11,7 +11,7 @@ programa {
 
 		cm = m * 100
 
-		escreva("\nSeu numero convertido em centímetros: " , cm ," cm")
+		escreva("\nSeu numero convertido em centÃ­metros: " , cm ," cm")
 
 	}
 }
