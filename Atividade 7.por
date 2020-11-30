@@ -3,34 +3,52 @@ programa {
 	inclua biblioteca Matematica --> mat
 
 	funcao inicio() {
-		/*1.300 dÛlares (pesquise a cotaÁ„o do dÛlar de hoje).
-	    FaÁa um programa que leia quanto dinheiro uma pessoa tem de economia em reais e em
+		/*1.300 d√≥lares (pesquise a cota√ß√£o do d√≥lar de hoje).
+	    Fa√ßa um programa que leia quanto dinheiro uma pessoa tem de economia em reais e em
         seguida:
-        a. Escreva na tela quantos DÛlares faltam para comprar um PS5.
+        a. Escreva na tela quantos D√≥lares faltam para comprar um PS5.
         b. Escreva na tela quantos Reais faltam para comprar um PS5.
-        c. Escreva na tela quantos livros Harry Potter e a Ordem da FÍnix poderiam ser
+        c. Escreva na tela quantos livros Harry Potter e a Ordem da F√™nix poderiam ser
         comprados com o mesmo valor. */ 
     
-    real dindinBr, dolar, hp, conta
+    real dindinBr, dolar, PsEmReal, ps, RealParaDol
     
     dolar = 5.40
-    hp = 50
-    conta = dolar * 1300
-
-    conta = mat.arredondar(conta, 3)
+    ps = 1300.0
+    PsEmReal = dolar * ps
+    PsEmReal = mat.arredondar( PsEmReal, 3)
     
     escreva("Quantos reais tem no seu porquinho de porcelana? ")
     leia(dindinBr)
-    se (dindinBr > conta) {
-        escreva("J· pode compra um PS de buenas e ainda sobra uns ",dindinBr - conta," pila")
+    se (dindinBr > PsEmReal) {
+        escreva("J√° pode compra um PS de buenas e ainda sobra uns ",dindinBr - PsEmReal," pila")
     }
-    se (dindinBr == conta) {
-        escreva("J· d· pra comprar um PS mas n„o vai sobrar dindin pra comprar nada")
+    se (dindinBr == PsEmReal) {
+        escreva("J√° d√° pra comprar um PS mas n√£o vai sobrar dindin pra comprar nada")
     }
-    se (dindinBr < conta){ 
-    escreva("Falta ", conta - dindinBr, " reais pra vocÍ ter um PS")
+    se (dindinBr < PsEmReal){ 
+    escreva("Falta ", PsEmReal - dindinBr, " reais pra voc√™ ter um PS")
     }
-	escreva("\nO valor do PS d· pra comprar ", conta / hp, " livros do Harry Potter")
+     
+    escreva("\n\nAgora vou lhe mostrar o resultado convertido em d√≥lares e caso falte algum bocadinho pra pagar: ")
+    
+    RealParaDol = dindinBr / dolar
+    RealParaDol = mat.arredondar( RealParaDol, 2)
+    
+    escreva("\nEsse √© o quanto que voc√™ tem em dol√°res: ", RealParaDol)
+    se (RealParaDol > ps) {
+        escreva("\nSobrou uns ",dindinBr - ps," dol√°res pra gastar no paraguay")
+    }
+    se (RealParaDol == ps) {
+        escreva("\nAssim como antes, d√° pra comprar um PS mas n√£o vai sobrar dol pra comprar nada")
+    }
+    se (RealParaDol < ps){ 
+    escreva("\nFalta ", ps - RealParaDol, " d√≥lares pra voc√™ ter um PS")
+    }
+    
+    
+    inteiro livros = PsEmReal / 50 
+	escreva("\n\nAl√©m disso, o valor do PS d√° pra comprar ", livros , " livros do Harry Potter")
     
 	}
 }
