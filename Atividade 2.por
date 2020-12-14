@@ -1,24 +1,23 @@
 programa {
 	funcao inicio() {
-	    /*2. Faça um programa dado quatro variáveis que (4 notas bimestrais),
-    mostre a média. */
+	    /*2. FaÃ§a um programa dado quatro variÃ¡veis que (4 notas bimestrais),
+    mostre a mÃ©dia. */
     
-            inteiro PrimeiraNota
-		    inteiro SegundaNota
+            	inteiro PrimeiraNota
+	        inteiro SegundaNota
 	    	inteiro TerceiraNota
 	    	inteiro QuartaNota
-		    inteiro soma
 		
-		escreva("Quantos que você tirou no 1º Bimestre?\n ")
+		escreva("Quantos que vocÃª tirou no 1Âº Bimestre?\n ")
 		leia(PrimeiraNota)
-		escreva("Quantos que você tirou no 2º Bimestre?\n ")
+		escreva("Quantos que vocÃª tirou no 2Âº Bimestre?\n ")
 		leia(SegundaNota)
-		escreva("Quantos que você tirou no 3º Bimestre?\n ")
+		escreva("Quantos que vocÃª tirou no 3Âº Bimestre?\n ")
 		leia(TerceiraNota)
-		escreva("Quantos que você tirou no 4º Bimestre?\n ")
+		escreva("Quantos que vocÃª tirou no 4Âº Bimestre?\n ")
 		leia(QuartaNota)
 		
-		escreva("Sua média foi: ", (PrimeiraNota + SegundaNota + TerceiraNota + QuartaNota)/ 4 )
+		escreva("Sua mÃ©dia foi: ", (PrimeiraNota + SegundaNota + TerceiraNota + QuartaNota)/ 4 )
 		
 		
 	}
